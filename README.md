@@ -15,6 +15,7 @@
     - `Mode`:
 - `Hook Actuator`
     - `IP`: 192.168.7.14
+    - `Namespace`: id14
     - `Mode`: Position
 
 ## Camera (2X)
