@@ -1,0 +1,14 @@
+tags:
+  - id: 1
+    position: [0.0, 0.0, 0.0]
+    orientation: [0.0, 0.0, 0.0, 1.0]  # Quaternion: [x, y, z, w]
+
+  - id: 2
+    position: [1.0, 0.0, 0.0]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+
+  - id: 3
+    position: [2.0, 1.0, 0.0]
+    orientation: [0.0, 0.0, 0.0, 1.0]
+
+  # Add more tags as needed
