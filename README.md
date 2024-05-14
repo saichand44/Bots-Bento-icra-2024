@@ -2,17 +2,21 @@
 
 ## Motor (1X)
 - `Front Left`
-    - `IP`: 
-    - `Mode`: 
+    - `IP`: 192.168.7.10
+    - `Namespace`: id10
+    - `Mode`: Wheel
 - `Front Right` 
-    - `IP`: 
-    - `Mode`: 
+    - `IP`: 192.168.7.11
+    - `Namespace`: id11
+    - `Mode`: Wheel
 - `Rear Left`
-    - `IP`: 
-    - `Mode`: 
+    - `IP`: 192.168.7.12
+    - `Namespace`: id12
+    - `Mode`: Wheel
 - `Rear Right`
-    - `IP`: 
-    - `Mode`:
+    - `IP`: 192.168.7.13
+    - `Namespace`: id13
+    - `Mode`: Wheel
 - `Hook Actuator`
     - `IP`: 192.168.7.14
     - `Namespace`: id14
