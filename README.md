@@ -14,15 +14,18 @@
     - `IP`: 
     - `Mode`:
 - `Hook Actuator`
-    - `IP`: 
-    - `Mode`:
+    - `IP`: 192.168.7.14
+    - `Mode`: Position
 
 ## Camera (2X)
 - `Front`
-    - `IP`: 
+    - `IP`: 192.168.7.20
+    - `Namespace`: id20
 - `Rear`
-    - `IP`: 
+    - `IP`: 192.168.7.21
+    - `Namespace`: id21
 
 ## IMU (3X)
 - `IMU`
-    - `IP`: 
+    - `IP`: 192.168.7.30
+    - `Namespace`: id30
