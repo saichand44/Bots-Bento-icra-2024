@@ -24,14 +24,20 @@ find_package(rclpy REQUIRED)
 # add necessary commands for Python
 ament_python_install_package(${PROJECT_NAME})
 
+# Install Python executables
 install(PROGRAMS
+  scripts/motor_all_test.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# add commands for launch file
-install(DIRECTORY
-  config launch
-  DESTINATION share/${PROJECT_NAME}
+# Install config files
+install(DIRECTORY config/
+  DESTINATION share/${PROJECT_NAME}/config
+)
+
+# Install launch files
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
 )
 
 if(BUILD_TESTING)

@@ -12,10 +12,10 @@ class MotorNode(Node):
         super().__init__(node_name)
         
         # Publishers for each wheel
-        self.pub_front_right = self.create_publisher(Float32, "/olive/servo/id23/goal/velocity", QoSProfile(depth=10))
-        self.pub_front_left = self.create_publisher(Float32, "/olive/servo/id22/goal/velocity", QoSProfile(depth=10))
-        self.pub_rear_right = self.create_publisher(Float32, "/olive/servo/id21/goal/velocity", QoSProfile(depth=10))
-        self.pub_rear_left = self.create_publisher(Float32, "/olive/servo/id20/goal/velocity", QoSProfile(depth=10))
+        self.pub_front_right = self.create_publisher(Float32, "/olive/servo/id11/goal/velocity", QoSProfile(depth=10))
+        self.pub_front_left = self.create_publisher(Float32, "/olive/servo/id10/goal/velocity", QoSProfile(depth=10))
+        self.pub_rear_right = self.create_publisher(Float32, "/olive/servo/id13/goal/velocity", QoSProfile(depth=10))
+        self.pub_rear_left = self.create_publisher(Float32, "/olive/servo/id12/goal/velocity", QoSProfile(depth=10))
         
         # Subscription to cmd_vel
         self.sub_cmd_vel = self.create_subscription(Twist, "cmd_vel", self.callback_cmd_vel, QoSProfile(depth=10))
@@ -75,5 +75,5 @@ if __name__ == '__main__':
     motor_node = MotorNode("motor_node")
     print("Bots_Bento_Base_Control_v1.0")
     rclpy.spin(motor_node)
-    main_node.destroy_node()
+    motor_node.destroy_node()
     rclpy.shutdown()

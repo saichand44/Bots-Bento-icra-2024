@@ -1,0 +1,5 @@
+/motor_test_node:
+  ros__parameters:
+    vx: 0.1
+    vy: 0.1
+    wz: 0.1
