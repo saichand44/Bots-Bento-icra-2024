@@ -29,6 +29,7 @@ install(PROGRAMS
   scripts/motor_all_test.py
   scripts/position_control_PID.py
   scripts/position_control.py
+  scripts/robot_pose_test.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
